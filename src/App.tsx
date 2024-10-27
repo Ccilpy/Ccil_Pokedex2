@@ -12,15 +12,18 @@ function App() {
 		},
 		[]
 	  );
+	const pokemon = pokemonList[PokemonIndex];
   return (
     <>
       <div>
 	  	<NavBar 
 		  PokemonIndex={PokemonIndex}
           setPokemonIndex={setPokemonIndex}
-          pokemonList={pokemonList}/>
+          pokemonList={pokemonList} />
 
-        <PokemonCard pokemon={pokemonList[PokemonIndex]} />
+        <PokemonCard 
+		name= {pokemon.name}
+		imgSrc= {pokemon.imgSrc} />
       </div>
     </>
   );

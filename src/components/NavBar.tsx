@@ -9,7 +9,7 @@ interface NavBarProps {
 function NavBar ({PokemonIndex, setPokemonIndex, pokemonList} : NavBarProps) {
     const handleClick = (index: number) => { if (pokemonList[index].name === "pikachu")
         alert("pika pikachu !!!") 
-        setPokemonIndex(index);
+        setPokemonIndex(index); 
       };
 
     return (
